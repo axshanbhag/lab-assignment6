@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Records</title>
+    <style>
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            border-spacing: 10px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            border: 2px solid #333;
+        }
+
+        caption {
+            font-size: 25px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        thead {
+            background-color: #a98e8e;
+            color: white;
+            font-weight: bold;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .odd {
+            background-color: #f2f2f2;
+        }
+
+        .even {
+            background-color: #e9e9e9;
+        }
+
+        tfoot {
+            background-color: #eec6c6;
+            font-weight: bold;
+        }
+
+        .section-header {
+            background-color: #a98e8e;
+            color: white;
+            font-size: 17px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <caption>Student  Academic Records</caption>
+        <thead>
+            <tr>
+                <th>Student ID</th>
+                <th>Name</th>
+                <th colspan="2" class="section-header">Academic Information</th>
+            </tr>
+            <tr>
+                <th></th>
+                <th></th>
+                <th>Course</th>
+                <th>Grade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class = "odd">
+                <td>101231</td>
+                <td>Hwang Yeji</td>
+                <td>CIS 50</td>
+                <td>85%</td>
+            </tr>
+            <tr class = "even">
+                <td>101232</td>
+                <td>Choi Lisa</td>
+                <td>CIS 59</td>
+                <td>92%</td>
+            </tr>
+            <tr class = "odd">
+                <td>101233</td>
+                <td>Ryunjin</td>
+                <td>CS 7</td>
+                <td>88%</td>
+            </tr>
+            <tr class = "even">
+                <td>101234</td>
+                <td>Kim Chaeyoung</td>
+                <td>CS 1</td>
+                <td>90%</td>
+            </tr>
+            <tr class = "odd">
+                <td>101235</td>
+                <td>Chu Yuna</td>
+                <td>CIS 59C</td>
+                <td>79%</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">Average Grade: 86.8%</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>
